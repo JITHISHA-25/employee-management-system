@@ -1,0 +1,91 @@
+/* styles.css */
+
+/* Set a light background for the full page */
+body {
+    background: #f2f6fc; /* very light blueish shade */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Login box */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-box {
+    background: #ffffff; /* pure white box */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* soft shadow */
+}
+
+/* Heading style */
+.login-box h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #4a69bd; /* Soft Blue */
+}
+
+/* Input fields */
+.form-control {
+    background-color: #f8f9fa; /* very light gray */
+    border: 1px solid #d1d3e2;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* Input focus */
+.form-control:focus {
+    border-color: #4a69bd;
+    box-shadow: 0 0 0 0.2rem rgba(74, 105, 189, 0.25);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #4a69bd;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3b5998;
+}
+
+.btn-secondary {
+    background-color: #a5b1c2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c9a;
+}
+
+/* Alert box */
+.alert-danger {
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Adjust the button spacing */
+.d-flex .btn {
+    width: 48%;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .login-box {
+        padding: 20px;
+    }
+}
